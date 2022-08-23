@@ -1,2 +1,3 @@
-zhangsan: 34
-lisi: 55
+name: liaojiao
+age: 27
+tel: ${random_string(6) }
