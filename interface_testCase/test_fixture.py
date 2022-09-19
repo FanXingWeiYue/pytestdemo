@@ -3,6 +3,7 @@ import requests as requests
 
 from common.yamlutil import read_yaml
 
+
 @pytest.mark.usefixtures("qianzhi_1")  # 在类声明上面加 @pytest.mark.usefixtures() ，代表这个类里面所有测试用例都会调用该fixture
 class TestLogin:
     @pytest.mark.run(order=1)
