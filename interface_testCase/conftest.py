@@ -1,5 +1,3 @@
-import time
-
 import pytest
 
 
@@ -21,8 +19,8 @@ def gujian_2():
 
 
 # 作用范围为方法的前后置固件
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="function")
 def gujian_3():
     print("gujian_3前置动作运行一次")
-    yield "qianzhi_1"
+    yield "qianzhi_3"
     print("gujian_3后置动作运行一次")
